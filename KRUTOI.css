@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
 }
+
+
 .head{
     background-color: #3914AF;
     text-align: center;
@@ -43,8 +45,10 @@ body{
 .todoList{
     padding: 10px;
     width: 50%;
-
-
+    overflow: scroll;
+    overflow-x:auto;
+    FLOAT : left;
+    height: 75vh;
 }
 .li__content{
     text-align: left;
@@ -90,4 +94,23 @@ h1{
     color:white;
 }
 
+.filter {
+    padding-right: 55vh;
+    font-size: 24px;
+}
+.filter a{
+    color: #00ff2a;
+    padding-right: 10px;
+}
 
+.todoList::-webkit-scrollbar-thumb {
+    background-color: #2395e3;
+}
+
+.todoList::-webkit-scrollbar {
+    width: 1em;
+}
+
+.todoList::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
